@@ -1,6 +1,5 @@
-package T20;
+package Oct24;
 import java.util.Arrays;
-
 
 public class MedianOfTwoArrays {
 
@@ -31,18 +30,20 @@ public class MedianOfTwoArrays {
                 }
             }
         }
+
         return array3;
     }
 
     public static double findMedianofArray(int[] arr1, int[] arr2){
 
         int[] mergedArray=mergeTwoArray(arr1,arr2);
+
         int n=mergedArray.length;
 
         if(n%2==0){
             return (mergedArray[n/2 - 1]+mergedArray[n/2])/2;
         }
         else
-            return mergedArray[n/2];
+           return mergedArray[n/2];
     }
 }
